@@ -1,531 +1,697 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<!-- ======================================================================= -->
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
-  <script type="text/javascript" id="www-widgetapi-script" src="./wayfast-traversability-website_files/www-widgetapi.js" async="">
-</script>
-  <script src="./wayfast-traversability-website_files/jsapi" type="text/javascript">
-</script>
-  <script type="text/javascript">
-//<![CDATA[
-  google.load("jquery", "1.3.2");
-  //]]>
-  </script>
-  <script type="text/javascript" charset="UTF-8" src="./wayfast-traversability-website_files/jquery.min.js">
-</script>
-  <style type="text/css">
-/*<![CDATA[*/
-  body {
-    font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight:300;
-    font-size:18px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1400px;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <meta name="copyright" content="MACode ID, https://www.macodeid.com/">
+  
+  <title>Virtual Folio - Portfolio HTML5 Template</title>
 
-  h1 {
-    font-weight:300;
-  }
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/themify-icons.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 
-  .disclaimerbox {
-    background-color: #eee;
-    border: 1px solid #eeeeee;
-    border-radius: 10px ;
-    -moz-border-radius: 10px ;
-    -webkit-border-radius: 10px ;
-    padding: 20px;
-  }
-
-  video.header-vid {
-    height: 140px;
-    border: 1px solid black;
-    border-radius: 10px ;
-    -moz-border-radius: 10px ;
-    -webkit-border-radius: 10px ;
-  }
-
-  img.header-img {
-    height: 140px;
-    border: 1px solid black;
-    border-radius: 10px ;
-    -moz-border-radius: 10px ;
-    -webkit-border-radius: 10px ;
-  }
-
-  img.rounded {
-    border: 1px solid #eeeeee;
-    border-radius: 10px ;
-    -moz-border-radius: 10px ;
-    -webkit-border-radius: 10px ;
-  }
-
-  a:link,a:visited
-  {
-    color: #1367a7;
-    text-decoration: none;
-  }
-  a:hover {
-    color: #208799;
-  }
-
-  td.dl-link {
-    height: 160px;
-    text-align: center;
-    font-size: 22px;
-  }
-
-  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-    box-shadow:
-            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-            5px 5px 0 0px #fff, /* The second layer */
-            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-            10px 10px 0 0px #fff, /* The third layer */
-            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
-            15px 15px 0 0px #fff, /* The fourth layer */
-            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
-            20px 20px 0 0px #fff, /* The fifth layer */
-            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
-            25px 25px 0 0px #fff, /* The fifth layer */
-            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
-    margin-left: 10px;
-    margin-right: 45px;
-  }
-
-
-  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-    box-shadow:
-            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-            5px 5px 0 0px #fff, /* The second layer */
-            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-            10px 10px 0 0px #fff, /* The third layer */
-            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 30px;
-    margin-bottom: 5px;
-  }
-
-  .vert-cent {
-    position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-  }
-
-  hr
-  {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  }
-
-  #authors td {
-    padding-bottom:5px;
-    padding-top:30px;
-  }
-  /*]]>*/
-  </style><!-- ======================================================================= -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-
-  <script async="" src="./wayfast-traversability-website_files/js" type="text/javascript">
-</script>
-  <script type="text/javascript">
-//<![CDATA[
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-114291442-6');
-  //]]>
-  </script>
-  <script type="text/javascript" src="./wayfast-traversability-website_files/hidebib.js">
-</script>
-  <link href="./wayfast-traversability-website_files/css" rel="stylesheet" type="text/css" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="icon" type="image/png" href="" />
-
-  <title>WayFAST: Traversability Predictive Navigation for Field Robots</title>
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="./wayfast-traversability-website_files/iframe_api" type="text/javascript">
-</script>
+  <link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/vendor/owl-carousel/owl.carousel.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/vendor/nice-select/css/nice-select.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/vendor/fancybox/css/jquery.fancybox.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/virtual.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/topbar.virtual.css">
 </head>
-
-<body>
-  <br />
-
-  <center>
-    <span style="font-size:50px; font-weight:bold;">WayFAST: Traversability Predictive <br/> Navigation for Field Robots</span>
-  </center>
+<body class="theme-red">
   
-  <br />
-
-  <table align="center" width="1300px" style='margin-bottom: 1px'>
-    <tbody>
-      <tr>
-        <td align="center" width="250px">
-          <center>
-            <span style="font-size:22px; font-weight:bold">Mateus Valverde Gasparino<sup>1</sup></span>
-          </center>
-        </td>
-
-        <td align="center" width="250px">
-          <center>
-            <span style="font-size:22px; font-weight:bold">Arun Narenthiran Sivakumar<sup>1</sup></span>
-          </center>
-        </td>
-
-        <td align="center" width="100px">
-          <center>
-            <span style="font-size:22px; font-weight:bold">Yixiao Liu<sup>1</sup></span>
-          </center>
-        </td>
-
-        <td align="center" width="300px">
-          <center>
-            <span style="font-size:22px; font-weight:bold">Andres Eduardo Baquero Velasquez<sup>1</sup></span>
-          </center>
-        </td>
-
-      </tr>
-    </tbody>
-  </table>
-
-  <table align="center" width="1100px" style='margin-bottom: 20px'>
-    <tbody>
-      <tr>
-        <td align="center" width="200px">
-          <center>
-            <span style="font-size:22px; font-weight:bold">Vitor Akihiro Hisano Higuti<sup>2</sup></span>
-          </center>
-        </td>
-
-        <td align="center" width="150px">
-          <center>
-            <span style="font-size:22px; font-weight:bold">John Rogers<sup>3</sup></span>
-          </center>
-        </td>
-        
-        <td align="center" width="150px">
-          <center>
-            <span style="font-size:22px; font-weight:bold">Huy Tran<sup>4</sup></span>
-          </center>
-        </td>
-
-        <td align="center" width="150px">
-          <center>
-            <span style="font-size:22px; font-weight:bold">Girish Chowdhary<sup>1</sup></span>
-          </center>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <table align="center" width="600px" style='margin-bottom: 1px'>
-    <tr>
-      <td align="center" width="200px">
-        <center>
-          <span style="font-size:17px; font-weight: 200;"><sup>1</sup> Field Robotics Engineering and Science Hub (FRESH), Illinois Autonomous Farm, University of Illinois at Urbana-Champaign (UIUC), IL</span>
-        </center>
-      </td>
-      
-    </tr>
-  </table>
-
-  <table align="center" width="700px" style='margin-bottom: 1px'>
-    <tr>
-      <td align="center" width="230px">
-        <center>
-          <span style="font-size:17px; font-weight:200;"><sup>2</sup> EarthSense Inc., Champaign, IL, USA</span>
-        </center>
-      </td>
-    </tr>
-  </table>
-
-  <table align="center" width="700px" style='margin-bottom: 1px'>
-    <tr>
-      <td align="center" width="230px">
-        <center>
-          <span style="font-size:17px; font-weight:200;"><sup>3</sup> DEVCOM Army Research Lab, Adelphi, MD, USA</span>
-        </center>
-      </td>
-    </tr>
-  </table>
+  <!-- Back to top button -->
+  <div class="btn-back_to_top">
+    <span class="ti-arrow-up"></span>
+  </div>
   
-  <table align="center" width="700px" style='margin-bottom: 20px'>
-    <tr>
-      <td align="center" width="230px">
-        <center>
-          <span style="font-size:17px; font-weight:200;"><sup>4</sup> Dept. of Aerospace Engineering, UIUC, IL, USA</span>
-        </center>
-      </td>
-    </tr>
-  </table> 
-
-  <table align="center" width="700px" style='margin-bottom: 50px'>
-    <tr>
-      <td align="center" width="230px">
-        <center>
-          <span style="font-size:15px; font-weight:200;">Correspondence to {mvalve2, girishc}@illinois.edu </span>
-        </center>
-      </td>
-      
-    </tr>
-  </table>
-
-
-  <!--table align="center" width="700px" style='margin-bottom: 10px'>
-      <tr>
-        <td align="center" width="230px">
-          <center>
-            <span style="font-size:30px; font-weight: 500;">RSS 2021</span>
-          </center>
-        </td>
-      </tr>
-  </table-->
+  <!-- Setting button -->
+  <div class="config">
+    <div class="template-config">
+      <!-- Settings -->
+      <div class="d-block">
+        <button class="btn btn-fab btn-sm" id="sideel" title="Settings"><span class="ti-settings"></span></button>
+      </div>
+      <!-- Puschase -->
+      <div class="d-block">
+        <a href="https://macodeid.com/projects/virtual-folio/" class="btn btn-fab btn-sm" title="Get this template" data-toggle="tooltip" data-placement="left"><span class="ti-download"></span></a>
+      </div>
+      <!-- Help -->
+      <div class="d-block">
+        <a href="#" class="btn btn-fab btn-sm" title="Help" data-toggle="tooltip" data-placement="left"><span class="ti-help"></span></a>
+      </div>
+    </div>
+    <div class="set-menu">
+      <p>Select Color</p>
+      <div class="color-bar" data-toggle="selected">
+        <span class="color-item bg-theme-red selected" data-class="theme-red"></span>
+        <span class="color-item bg-theme-blue" data-class="theme-blue"></span>
+        <span class="color-item bg-theme-green" data-class="theme-green"></span>
+        <span class="color-item bg-theme-orange" data-class="theme-orange"></span>
+        <span class="color-item bg-theme-purple" data-class="theme-purple"></span>
+      </div>
+      <select class="custom-select d-block my-2" id="change-page">
+        <option value="">Choose Page</option>
+        <option value="index">Topbar</option>
+        <option value="blog-topbar">Blog (Topbar)</option>
+        <option value="index-2">Minibar</option>
+        <option value="blog-minibar">Blog (Minibar)</option>
+      </select>
+    </div>
+  </div>
   
-  <table align="center" width="700px">
-          <tbody>
-            <tr>
-              <td align="center" width="50px"><center><span style="font-size:24px"><a href="">Paper</a></span></center></td>
-              <td align="center" width="50px"><center><span style="font-size:24px"><a href="https://github.com/matval/WayFAST">Code</a></span></center></td>
-              <td align="center" width="50px"><center><span style="font-size:24px"><a href="">Data</a></span></center></td-->
-              <td align="center" width="50px"><center><span style="font-size:24px"><a href="">Slides</a></span></center></td>
-              <td align="center" width="50px"><center><span style="font-size:24px"><a href="">Poster</a></span></center></td>
-            </tr>
-          </tbody>
-  </table>
-
-  <br />
-
-  <table align="center" width="1350px" style='margin-bottom: 5px'>
-    <tbody>
-      <tr>
-        <td align="center" width="800px">
-          <center>
-            <a href="./wayfast-traversability-website_files/WayFAST.jpg"><img src="./wayfast-traversability-website_files/WayFAST.jpg" width="760px" /></a><br />
-          </center>
-        </td>
-
-        <td align="center" width="550px">
-          <center>
-            <div style="width:500px; margin:0 auto; text-align:justify">
-              We present a self-supervised approach for learning
-              to predict traversable paths for wheeled mobile robots that
-              require good traction to navigate. Our algorithm, termed
-              WayFAST (Waypoint Free Autonomous Systems for Traversability),
-              uses RGB and depth data, along with navigation experience,
-              to autonomously generate traversable paths in outdoor
-              unstructured environments. Our key inspiration is that traction
-              can be estimated for rolling robots using kinodynamic models.
-              Using traction estimates provided by an online receding horizon
-              estimator, we are able to train a traversability prediction
-              neural network in a self-supervised manner, without requiring
-              heuristics utilized by previous methods. We demonstrate the
-              effectiveness of WayFAST through extensive field testing in
-              varying environments, ranging from sandy dry beaches to
-              forest canopies and snow covered grass fields. Our results
-              clearly demonstrate that WayFAST can learn to avoid geometric
-              obstacles as well as untraversable terrain, such as snow, which
-              would be difficult to avoid with sensors that provide only
-              geometric data, such as LiDAR. Furthermore, we show that
-              our training pipeline based on online traction estimates is more
-              data efficient than other heuristic-based methods.
-            </div>
-          </center>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <br />
-  <hr/>
-  <br />
-
-  <table align="center" width="700px" style='margin-bottom: 20px'>  
-    <tr>
-      <td align="center" width="230px">
-        <center>
-          <span style="font-size:28px; font-weight:bold;">We tested WayFAST in a variety of environments</span>
-        </center>
-      </td>
-    </tr>
-  </table>
-
-  <table align="center" width="1350px" style='margin-bottom: 5px'>
-    <tbody>
-      <tr>
-        <td align="center" height="700">
-          <center>
-            <a href="./wayfast-traversability-website_files/wayfast1.gif"><img style="border-style: solid; border-color: black; border-width: thin" src="./wayfast-traversability-website_files/wayfast1.gif" height="700px" /></a><br />
-          </center>
-        </td>
-
-        <td align="center" height="700">
-          <center>
-            <a href="./wayfast-traversability-website_files/wayfast2.gif"><img style="border-style: solid; border-color: black; border-width: thin" src="./wayfast-traversability-website_files/wayfast2.gif" height="700px" /></a><br />
-          </center>
-        </td>
-
-        <td align="center" height="700">
-          <center>
-            <a href="./wayfast-traversability-website_files/wayfast3.gif"><img style="border-style: solid; border-color: black; border-width: thin" src="./wayfast-traversability-website_files/wayfast3.gif" height="700px" /></a><br />
-          </center>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table align="center" width="700px" style='margin-bottom: 1px'>  
-    <tr>
-      <td align="center" width="230px">
-        <center>
-          <span style="font-size:15px; font-weight: 200;">Videos at 2x</span>
-        </center>
-      </td>
-    </tr>
-  </table>
+  <div class="vg-page page-home" id="home" style="background-image: url(assets/img/bg_image_1.jpg)">
+    <!-- Navbar -->
+    <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
+      <div class="container">
+        <a href="" class="navbar-brand">V-Folio</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar" aria-expanded="true">
+          <span class="ti-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="#home" class="nav-link" data-animate="scrolling">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link" data-animate="scrolling">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link" data-animate="scrolling">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#blog" class="nav-link" data-animate="scrolling">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link" data-animate="scrolling">Contact</a>
+            </li>
+          </ul>
+          <ul class="nav ml-auto">
+            <li class="nav-item">
+              <button class="btn btn-fab btn-theme no-shadow">En</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> <!-- End Navbar -->
+    <!-- Caption header -->
+    <div class="caption-header text-center wow zoomInDown">
+      <h5 class="fw-normal">Welcome</h5>
+      <h1 class="fw-light mb-4">I'm <b class="fg-theme">Mateus</b> Valverde Gasparino</h1>
+      <div class="badge">Ph.D. Student</div>
+    </div> <!-- End Caption header -->
+    <div class="floating-button"><span class="ti-mouse"></span></div>
+  </div>
   
-  
-
-  <!--table align="center" width="300px" style="padding-top: 25px">
-    <tbody>
-      <tr>
-        <td align="center" width="300px"><iframe width="560" height="315" src="https://www.youtube.com/embed/B8uucfzb0P4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-      </tr>
-    </tbody>
-  </table-->
-
-  <br />
-  <hr/>
-  <br />
-
-  <table align="center" width="700px" style='margin-bottom: 20px'>
-    <tr>
-      <td align="center" width="230px">
-        <center>
-          <span style="font-size:28px; font-weight:bold;">WayFAST Overview</span>
-        </center>
-      </td>
-    </tr>
-  </table>
-
-  <br/>
-
-  <p style="margin-top:4px;">
-  </p>
-
-  <table align="center" width="1350px">
-    <tbody>
-      <tr>
-        <td align="center" width="550px">
-          <center>
-            <div style="width:500px; margin:0 auto; text-align:justify">
-              WayFAST is a modular architecture. In our method, images are used to
-              predict a local traversability map, which is used to generate a
-              cost function for the model predictive control (MPC) block.
-              MPC generates locally optimal goal-oriented trajectories of
-              good traction that avoid obstacles.
-            </div>
-            <br/>
-            <div style="width:500px; margin:0 auto; text-align:justify">
-              To drive the robot on a safe path to reach the goal location,
-              we formulate a nonlinear model predictive controller
-              (NMPC) that leverages convolutional network traversability prediction.
-              A kino-dynamic model is used to predict the robot<span>&#39;</span>s states while network
-              output is used to predict terrain traversability.
-            </div>
-          </center>
-        </td>
-
-        <td width="600px">
-          <center>
-            <a href="./wayfast-traversability-website_files/wayfast_schematic.png"><img src="./wayfast-traversability-website_files/wayfast_schematic.png" width="600px" /></a><br />
-          </center>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  
-  <br />
-  <hr/>
-  <br />
-
-  <table align="center" width="700px" style='margin-bottom: 20px'>
-    <tr>
-      <td align="center" width="230px">
-        <center>
-          <span style="font-size:28px; font-weight:bold;">Paper</span>
-        </center>
-      </td>
-    </tr>
-  </table>
-
-
-  <table align="center" width="auto">
-    <tbody>
-      <tr>
-        <td width="200px" align="left">
-          <a href=""><img style="width:200px; border-style: solid; border-color: black; border-width: thin" src="./wayfast-traversability-website_files/thumbnail.png"/></a>
-        </td>
-        
-        <td width="50px" align="center"></td>
-
-        <td width="600px" align="left">
-          <div style="font-size:15pt; text-align:justify">
-            Mateus Valverde Gasparino, Arun Narenthiran Sivakumar, Yixiao Liu, Andres Eduardo Baquero Velasquez, Vitor Akihiro Hisano Higuti, John Rogers, Ruy Tran, Girish Chowdhary.
-            WayFAST: Traversability Predictive Navigation for Field Robots.
-          </div></p>
-          
-          <div class="paper" id="assemblies19_bib">
-            <pre xml:space="preserve" style="display: block; font-size: 12px">
-@article{gasparino2022wayfast,
-  title={WayFAST: Traversability Predictive Navigation for Field Robots},
-  author={Gasparino, Mateus V. and Sivakumar, Arun N. and Liu, Yixiao and
-  Velasquez, Andres E. B. and Higuti, Vitor A. H. and Rogers, John and
-  Tran, Huy, and Chowdhary, Girish},
-  journal={arXiv preprint arXiv: },
-  year={2022}
-}
-            </pre>
+  <div class="vg-page page-about" id="about">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-4 py-3">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/person.jpg" alt="">
           </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <br />
-  <hr/>
-  <br />
-
-  <table align="center" width="700px" style='margin-bottom: 20px'>
-    <tr>
-      <td align="center" width="230px">
-        <center>
-          <span style="font-size:28px; font-weight:bold;">Acknowledgements</span>
-        </center>
-      </td>
-    </tr>
-  </table>
-
-  <table align="center" width="500px">
-      <tbody><tr><td width="500px"><left>
-        This work was supported in part by ARL #W911NF2020184, NSF STTR #1951250, and NSF NRI 2.0 NIFA #2021-67021-33449.
-        <br/>Website template from <a href="https://matthewchang.github.io/value-learning-from-videos/">here</a>. <br>
-      </left></td></tr>
-    </tbody>
-  </table>
-
-  <br/>
-  <br/>
-  <br/>
+        </div>
+        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
+          <h1 class="fw-light">Mateus Valverde Gasparino</h1>
+          <h5 class="fg-theme mb-3">Ph.D. Student</h5>
+          <p class="text-muted">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form but the majority have suffered alteration in some</p>
+          <ul class="theme-list">
+            <!--li><b>From:</b> Texas, US</li-->
+            <li><b>Lives In:</b> Illinois, US</li>
+            <li><b>University:</b> University of Illinois at Urbana-Champaign</li>
+            <!--li><b>Gender:</b> Male</li-->
+          </ul>
+          <button class="btn btn-theme-outline">Download CV</button>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5">
+      <h1 class="text-center fw-normal wow fadeIn">My Skills</h1>
+      <div class="row py-3">
+        <div class="col-md-6">
+          <div class="px-lg-3">
+            <h4 class="wow fadeInUp">Coding skills</h4>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">JavaScript</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 86%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">86%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">PHP</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">HTML + CSS</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">100%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Phyton</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">90%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="px-lg-3">
+            <h4 class="wow fadeInUp">Design Skills</h4>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">UI / UX Design</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 92%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">92%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Web Design</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 99%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">99%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Logo Design</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 79%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">79%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-md-6 wow fadeInRight">
+          <h2 class="fw-normal">Education</h2>
+          <ul class="timeline mt-4 pr-md-5">
+            <li>
+              <div class="title">2010</div>
+              <div class="details">
+                <h5>Specialize of course</h5>
+                <small class="fg-theme">University of Study</small>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+              </div>
+            </li>
+            <li>
+              <div class="title">2009</div>
+              <div class="details">
+                <h5>Specialize of course</h5>
+                <small class="fg-theme">University of Study</small>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+              </div>
+            </li>
+            <li>
+              <div class="title">2008</div>
+              <div class="details">
+                <h5>Specialize of course</h5>
+                <small class="fg-theme">University of Study</small>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
+          <h2 class="fw-normal">Experience</h2>
+          <ul class="timeline mt-4 pr-md-5">
+            <li>
+              <div class="title">2017 - Current</div>
+              <div class="details">
+                <h5>Specialize of course</h5>
+                <small class="fg-theme">University of Study</small>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+              </div>
+            </li>
+            <li>
+              <div class="title">2014</div>
+              <div class="details">
+                <h5>Specialize of course</h5>
+                <small class="fg-theme">University of Study</small>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+              </div>
+            </li>
+            <li>
+              <div class="title">2011</div>
+              <div class="details">
+                <h5>Specialize of course</h5>
+                <small class="fg-theme">University of Study</small>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
   
-  <script xml:space="preserve" language="JavaScript" type="text/javascript"></script>
+  <div class="vg-page page-service">
+    <div class="container">
+      <div class="text-center wow fadeInUp">
+        <div class="badge badge-subhead">Service</div>
+      </div>
+      <h1 class="fw-normal text-center wow fadeInUp">What can i do?</h1>
+      <div class="row mt-5">
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="ti-paint-bucket"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">Web Design</h4>
+              <p>There are many variations of passages of Lorem Ipsum available</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="ti-search"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">SEO</h4>
+              <p>There are many variations of passages of Lorem Ipsum available</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="ti-vector"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">UI/UX Design</h4>
+              <p>There are many variations of passages of Lorem Ipsum available</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="ti-desktop"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">Web Development</h4>
+              <p>There are many variations of passages of Lorem Ipsum available</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="vg-page page-funfact" style="background-image: url(assets/img/bg_banner.jpg);">
+    <div class="container">
+      <div class="row section-counter">
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="768">768</h1>
+          <span>Clients</span>
+        </div>
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="230">230</h1>
+          <span>Project Compleate</span>
+        </div>
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="97">97</h1>
+          <span>Project Ongoing</span>
+        </div>
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="699">699</h1>
+          <span>Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Portfolio page -->
+  <div class="vg-page page-portfolio" id="portfolio">
+    <div class="container">
+      <div class="text-center wow fadeInUp">
+        <div class="badge badge-subhead">Portfolio</div>
+      </div>
+      <h1 class="text-center fw-normal wow fadeInUp">See my work</h1>
+      <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
+        <button class="btn btn-theme-outline selected" data-filter="*">All</button>
+        <button class="btn btn-theme-outline" data-filter=".apps">Apps</button>
+        <button class="btn btn-theme-outline" data-filter=".template">Template</button>
+        <button class="btn btn-theme-outline" data-filter=".ios">IOS</button>
+        <button class="btn btn-theme-outline" data-filter=".ui-ux">UI/UX</button>
+        <button class="btn btn-theme-outline" data-filter=".graphic">Graphic</button>
+        <button class="btn btn-theme-outline" data-filter=".wireframes">Wireframes</button>
+      </div>
+
+      <div class="gridder my-3">
+        <div class="grid-item apps wow zoomIn">
+          <div class="img-place" data-src="assets/img/work/work-1.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Mobile Travel App</h5> <p>Travel, Discovery</p>">
+            <img src="assets/img/work/work-1.jpg" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme">Mobile Travel App</h5>
+              <p>Travel, Discovery</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item template wireframes wow zoomIn">
+          <div class="img-place" data-src="assets/img/work/work-2.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Music App</h5> <p>Musics</p>">
+            <img src="assets/img/work/work-2.jpg" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme">Music App</h5>
+              <p>Musics</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item apps ios wow zoomIn">
+          <div class="img-place" data-src="assets/img/work/work-3.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Gaming Dashboard</h5> <p>Games, Streaming</p>">
+            <img src="assets/img/work/work-3.jpg" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme">Gaming Dashboard</h5>
+              <p>Games, Streaming</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item graphic ui-ux wow zoomIn">
+          <div class="img-place" data-src="assets/img/work/work-4.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Drugs Delivery App</h5> <p>Health, Drugs</p>">
+            <img src="assets/img/work/work-4.jpg" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme">Drugs Delivery App</h5>
+              <p>Health, Drugs</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item apps ios wow zoomIn">
+          <div class="img-place" data-src="assets/img/work/work-5.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Musics Discover</h5> <p>Musics, Dashboard</p>">
+            <img src="assets/img/work/work-5.jpg" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme">Musics Discover</h5>
+              <p>Musics, Dashboard</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item graphic ui-ux wireframes wow zoomIn">
+          <div class="img-place" data-src="assets/img/work/work-6.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Game Streaming</h5> <p>Games, Streaming</p>">
+            <img src="assets/img/work/work-6.jpg" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme">Game Streaming</h5>
+              <p>Games, Streaming</p>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End gridder -->
+      <div class="text-center wow fadeInUp">
+        <a href="javascript:void(0)" class="btn btn-theme">Load More</a>
+      </div>
+    </div>
+  </div> <!-- End Portfolio page -->
+  
+  <!-- Testimonial -->
+  <div class="vg-page page-testimonial">
+    <div class="container">
+      <h1 class="text-center fw-normal wow fadeInUp">What Clients are Saying</h1>
+      <div class="row justify-content-center mt-5 wow fadeInUp">
+        <div class="col-md-9">
+          <div class="owl-carousel testi-carousel">
+            <div class="item">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img-place">
+                    <img src="assets/img/testimonials/testimonials_1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="caption">
+                    <div class="testi-content">There are many variations of passages of Lorem Ipsum available, but the majority have suffered</div>
+                    <div class="testi-info">
+                      <div class="thumb-profile">
+                        <img src="assets/img/testimonials/testimonials_1.jpg" alt="">
+                      </div>
+                      <div class="tagline">
+                        <h5 class="mb-0">Satria Nugraha</h5>
+                        <span class="text-muted">CEO Nutshell</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img-place">
+                    <img src="assets/img/testimonials/testimonials_2.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="caption">
+                    <div class="testi-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe natus expedita ab facilis ut, animi explicabo amet. Voluptatibus possimus iste enim, doloremque, fugiat accusamus nisi optio fugit ratione expedita harum?</div>
+                    <div class="testi-info">
+                      <div class="thumb-profile">
+                        <img src="assets/img/testimonials/testimonials_2.jpg" alt="">
+                      </div>
+                      <div class="tagline">
+                        <h5 class="mb-0">Selena Arrini</h5>
+                        <span class="text-muted">CEO BigTree</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End testimonial -->
+  
+  <!-- Client -->
+  <div class="vg-page page-client">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_1.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_2.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_3.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_4.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_5.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_6.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_7.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_8.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End client -->
+  
+  <!-- Blog -->
+  <div class="vg-page page-blog" id="blog">
+    <div class="container">
+      <div class="text-center">
+        <div class="badge badge-subhead wow fadeInUp">Blog</div>
+      </div>
+      <h1 class="text-center fw-normal wow fadeInUp">Latest Post</h1>
+      <div class="row post-grid">
+        <div class="col-md-6 col-lg-4 wow fadeInUp">
+          <div class="card">
+            <div class="img-place">
+              <img src="../assets/img/work/work-9.jpg" alt="">
+            </div>
+            <div class="caption">
+              <a href="javascript:void(0)" class="post-category">Technology</a>
+              <a href="#" class="post-title">Invision design forward fund</a>
+              <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 wow fadeInUp">
+          <div class="card">
+            <div class="img-place">
+              <img src="../assets/img/work/work-6.jpg" alt="">
+            </div>
+            <div class="caption">
+              <a href="javascript:void(0)" class="post-category">Business</a>
+              <a href="#" class="post-title">Announcing a plan for small teams</a>
+              <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 wow fadeInUp">
+          <div class="card">
+            <div class="img-place">
+              <img src="../assets/img/work/work-1.jpg" alt="">
+            </div>
+            <div class="caption">
+              <a href="javascript:void(0)" class="post-category">Design</a>
+              <a href="#" class="post-title">5 basic tips for illustrating</a>
+              <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center py-3 wow fadeInUp">
+          <a href="blog-fullbar.html" class="btn btn-theme">See All Post</a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End blog -->
+  
+  <!-- Contact -->
+  <div class="vg-page page-contact" id="contact">
+    <div class="container-fluid">
+      <div class="text-center wow fadeInUp">
+        <div class="badge badge-subhead">Contact</div>
+      </div>
+      <h1 class="text-center fw-normal wow fadeInUp">Get in touch</h1>
+      <div class="row py-5">
+        <div class="col-lg-7 px-0 pr-lg-3 wow zoomIn">
+          <div class="vg-maps">
+            <div id="google-maps" style="width: 100%; height: 100%;"></div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <form class="vg-contact-form">
+            <div class="form-row">
+              <div class="col-12 mt-3 wow fadeInUp">
+                <input class="form-control" type="text" name="Name" placeholder="Your Name">
+              </div>
+              <div class="col-6 mt-3 wow fadeInUp">
+                <input class="form-control" type="text" name="Email" placeholder="Email Address">
+              </div>
+              <div class="col-6 mt-3 wow fadeInUp">
+                <input class="form-control" type="text" name="Subject" placeholder="Subject">
+              </div>
+              <div class="col-12 mt-3 wow fadeInUp">
+                <textarea class="form-control" name="Message" rows="6" placeholder="Enter message here.."></textarea>
+              </div>
+              <button type="submit" class="btn btn-theme mt-3 wow fadeInUp ml-1">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End Contact -->
+  
+  <!-- Footer -->
+  <div class="vg-footer">
+    <h1 class="text-center">Virtual Folio</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 py-3">
+          <div class="footer-info">
+            <p>Where to find me</p>
+            <hr class="divider">
+            <p class="fs-large fg-white">1600 Amphitheatre Parkway Mountain View, California 94043 US</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 py-3">
+          <div class="float-lg-right">
+            <p>Follow me</p>
+            <hr class="divider">
+            <ul class="list-unstyled">
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 py-3">
+          <div class="float-lg-right">
+            <p>Contact me</p>
+            <hr class="divider">
+            <ul class="list-unstyled">
+              <li>info@virtual.com</li>
+              <li>+8890234</li>
+              <li>+813023</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-3">
+        <div class="col-12 mb-3">
+          <h3 class="fw-normal text-center">Subscribe</h3>
+        </div>
+        <div class="col-lg-6">
+          <form class="mb-3">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Email address">
+              <input type="submit" class="btn btn-theme no-shadow" value="Subscribe">
+            </div>
+          </form>
+        </div>
+        <div class="col-12">
+          <p class="text-center mb-0 mt-4">Copyright &copy;2020. All right reserved | This template is made with <span class="ti-heart fg-theme-red"></span> by <a href="https://www.macodeid.com/">MACode ID</a></p>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End footer -->
+  
+  
+  <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    
+  <script src="../assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+    
+  <script src="../assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+    
+  <script src="../assets/vendor/isotope/isotope.pkgd.min.js"></script>
+    
+  <script src="../assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
+    
+  <script src="../assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+
+  <script src="../assets/vendor/wow/wow.min.js"></script>
+
+  <script src="../assets/vendor/animateNumber/jquery.animateNumber.min.js"></script>
+
+  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+
+  <script src="../assets/js/google-maps.js"></script>
+    
+  <script src="../assets/js/topbar-virtual.js"></script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
+  
 </body>
 </html>
