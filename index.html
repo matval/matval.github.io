@@ -29,6 +29,10 @@
   <link rel="stylesheet" type="text/css" href="assets/css/virtual.css">
   
   <link rel="stylesheet" type="text/css" href="assets/css/topbar.virtual.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/social-media.css">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="theme-red">
   
@@ -41,7 +45,7 @@
     <!-- Navbar -->
     <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
       <div class="container">
-        <a href="" class="navbar-brand">My Page</a>
+        <!-- <a href="" class="navbar-brand"><b>Mateus</b></a> -->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar" aria-expanded="true">
           <span class="ti-menu"></span>
         </button>
@@ -51,7 +55,10 @@
               <a href="#home" class="nav-link" data-animate="scrolling">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link" data-animate="scrolling">Papers</a>
+              <a href="#about" class="nav-link" data-animate="scrolling">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#publications" class="nav-link" data-animate="scrolling">Publications</a>
             </li>
             <li class="nav-item">
               <a href="#portfolio" class="nav-link" data-animate="scrolling">Projects</a>
@@ -66,13 +73,13 @@
     </div> <!-- End Navbar -->
     <!-- Caption header -->
     <div class="caption-header text-center wow zoomInDown">
-      <h5 class="fw-normal">Welcome</h5>
-      <h1 class="fw-light mb-4">I'm <b class="fg-theme">Mateus</b> Valverde Gasparino</h1>
-      <div class="badge">Ph.D. Student</div>
+      <!-- <h5 class="fw-normal">Welcome</h5> -->
+      <h1 class="fw-bold mt-5">I'm <b class="fg-theme">Mateus</b> Valverde Gasparino</h1>
+      <!-- <div class="badge">Ph.D. Student</div> -->
     </div> <!-- End Caption header -->
-    <div class="floating-button"><span class="ti-mouse"></span></div>
   </div>
   
+  <!-- About page -->
   <div class="vg-page page-about" id="about">
     <div class="container py-5">
       <div class="row">
@@ -81,11 +88,11 @@
             <img src="assets/img/person.jpg" alt="">
           </div>
         </div>
-        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
-          <h1 class="fw-light">Mateus Valverde Gasparino</h1>
-          <h5 class="fg-theme mb-3">Computer Science Ph.D. Student</h5>
-          <p class="text-muted">Hello! I'm Mateus, a roboticist working in the robotics navigation for unstructured environments.</p>
-          <ul class="theme-list">
+        <div class="py-4 col-lg-6 offset-lg-1 wow fadeInRight">
+          <!-- <h1 class="fw-light">Mateus Valverde Gasparino</h1> -->
+          <h3 class="fg-theme mb-3 fw-bold">Ph.D. Candidate in Computer Science</h3>
+          <p class="text-muted text-justify">Hello! I'm Mateus, a roboticist working in the robotics navigation for unstructured environments.</p>
+          <ul class="theme-list text-justify">
             <!--li><b>From:</b> Texas, US</li-->
             <li><b>Lives In:</b> Illinois, US</li>
             <li><b>University:</b> University of Illinois at Urbana-Champaign</li>
@@ -95,10 +102,13 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="container pt-5">
-      <h1 class="text-center fw-normal wow fadeInUp">See my papers</h1>
-      <div class="row">
+  <!-- Publications page -->
+  <div class="vg-page page-about" id="publications">
+    <div class="container pt-1">
+      <h1 class="text-center fw-bold wow fadeInUp">Selected publications</h1>
+      <div class="row pt-3">
         <div class="col-md-6 wow fadeInRight">
           <ul class="timeline mt-4 pr-md-5">
             <li>
@@ -160,115 +170,154 @@
   </div>
   
   <!-- Portfolio page -->
-  <div class="vg-page page-portfolio" id="portfolio">
+  <div class="vg-page page-portfolio pt-5" id="portfolio">
+    <h1 class="text-center fw-bold wow fadeInUp">My projects</h1>
     <div class="container">
-      <h1 class="text-center fw-normal wow fadeInUp">Explore my work</h1>
-      <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
-        <button class="btn btn-theme-outline selected" data-filter="*">All</button>
-        <button class="btn btn-theme-outline" data-filter=".navigation">Navigation</button>
-        <button class="btn btn-theme-outline" data-filter=".perception">Perception</button>
-        <button class="btn btn-theme-outline" data-filter=".control">Control</button>
+      <div class="row pt-4">
+        <div class="col-lg-4">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/work/cropnav_turn.gif" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
+          <!-- <h1 class="fw-light">Mateus Valverde Gasparino</h1> -->
+          <h5 class="fg-theme mb-3 fw-bold">Whole farm autonomous navigation with automatic mode switching</h5>
+          <h6 class="text-justify">As the leader of this project, we created a hybrid navigation system that autonomously switches
+            between different sensing modalities. The system accommodates for the unreliable Global Navigation Satellite System (GNSS)
+            under the plant canopy by leveraging row-crop structure to autonomously navigate. This method showed significant improvements
+            in achieving about 750 m per intervention over GNSS-based navigation and 500 m over row-following navigation.</h6>
+        </div>
       </div>
-
-      <div class="gridder my-3">
-        <div class="grid-item navigation perception wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/WayFAST.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Mobile Travel App</h5> <p>Navigation, Perception</p>">
-            <img src="assets/img/work/WayFAST.jpg" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">WayFAST</h5>
-              <p>Navigation, Perception</p>
-            </div>
+      <div class="row pt-4">
+        <div class="col-lg-4">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/work/wayfast.gif" alt="">
           </div>
         </div>
-        <div class="grid-item template wireframes wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/work-2.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Music App</h5> <p>Navigation</p>">
-            <img src="assets/img/work/CropNav.png" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">CropNav</h5>
-              <p>Navigation</p>
-            </div>
+        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
+          <!-- <h1 class="fw-light">Mateus Valverde Gasparino</h1> -->
+          <h5 class="fg-theme mb-3 fw-bold">Traversability prediction for unstructured outdoor environments</h5>
+          <h6 class="text-justify">This was a project led by me where we demonstrated a self-supervised approach for predicting traversability
+            for mobile robots in outdoor unstructured environments. The method, denominated WayFAST, uses RGB and depth data to predict a
+            traversability map based on kinodynamic models that estimate traction. This allows for training
+            a traversability prediction neural network in a self-supervised manner without requiring heuristics utilized by previous methods.
+            Field testing in various environments, including sandy beaches, forest canopies, and snow-covered grass fields, demonstrated
+            the effectiveness of WayFAST in avoiding obstacles and untraversable terrain.</h6>
+        </div>
+      </div>
+      <div class="row pt-4">
+        <div class="col-lg-4">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/work/mpc_navigation.gif" alt="">
           </div>
         </div>
-        <!--
-        <div class="grid-item apps ios wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/work-3.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Gaming Dashboard</h5> <p>Control</p>">
-            <img src="assets/img/work/work-3.jpg" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">Gaming Dashboard</h5>
-              <p>Control</p>
-            </div>
+        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
+          <!-- <h1 class="fw-light">Mateus Valverde Gasparino</h1> -->
+          <h5 class="fg-theme mb-3 fw-bold">Model predictive control for agricultural navigation</h5>
+          <h6 class="text-justify">I was responsible for designing a model predictive control system that precisely guided a mobile robot
+            in challenging agricultural environments, while also being robust to disturbances. This project required a deep understanding
+            of both control theory and the unique challenges presented by agricultural environments. This controller design is able to
+            work with either visual or LiDAR-based perception.</h6>
+        </div>
+      </div>
+      <div class="row pt-4">
+        <div class="col-lg-4">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/work/cropfollow.gif" alt="">
           </div>
         </div>
-        <div class="grid-item graphic ui-ux wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/work-4.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Drugs Delivery App</h5> <p>Navigation, Control</p>">
-            <img src="assets/img/work/work-4.jpg" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">Drugs Delivery App</h5>
-              <p>Navigation, Control</p>
-            </div>
+        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
+          <h5 class="fg-theme mb-3 fw-bold">Under-canopy visual-based navigation</h5>
+          <h6 class="text-justify">As part of this project, I contributed to the development of CropFollow, a system for visually guided
+            autonomous navigation of under-canopy farm robots. Using machine learning and model predictive control, we overcame the
+            challenges of unreliable GPS and LiDAR, high sensing cost, and challenging farm terrain. I specifically worked on the design
+            and implementation of the model predictive control for robust perception with low-cost cameras. Our system outperformed
+            state-of-the-art LiDAR-based systems in extensive field testing spanning over 25 km, making a significant impact in the
+            field of precision agriculture.</h6>
+        </div>
+      </div>
+      <div class="row pt-4">
+        <div class="col-lg-4">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/work/deep_mpc.gif" alt="">
           </div>
         </div>
-        <div class="grid-item apps ios wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/work-5.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Musics Discover</h5> <p>Control</p>">
-            <img src="assets/img/work/work-5.jpg" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">Musics Discover</h5>
-              <p>Control</p>
-            </div>
+        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
+          <h5 class="fg-theme mb-3 fw-bold">Neural network-based adaptive MPC</h5>
+          <h6 class="text-justify">In this project, I participated in the development and implementation of a neural network-based adaptive
+            model predictive control system. This system was designed to learn uncertainties and model mismatches, allowing it to correct the model
+            dynamics in real-time. By using a neural network model, we were able to create a control system can adapt to highly complex uncertainties,
+            providing safe control even in the face of changing conditions and uncertainties.</h6>
+        </div>
+      </div>
+      <div class="row pt-4">
+        <div class="col-lg-4">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/work/mira_navigation.gif" alt="">
           </div>
         </div>
-        <div class="grid-item graphic ui-ux wireframes wow zoomIn">
-          <div class="img-place" data-src="assets/img/work/work-6.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Game Streaming</h5> <p>Perception</p>">
-            <img src="assets/img/work/work-6.jpg" alt="">
-            <div class="img-caption">
-              <h5 class="fg-theme">Game Streaming</h5>
-              <p>Perception</p>
-            </div>
+        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
+          <h5 class="fg-theme mb-3 fw-bold">Mirã's navigation</h5>
+          <h6 class="text-justify">I played a key role in developing the Mirã robot's navigation system, which uses advanced perception
+            and mapping techniques to navigate through soybean crops with accuracy and safety. The robot's embedded soil analysis
+            capabilities are also a major breakthrough, providing farmers with real-time data about their crops. Working on the Mirã
+            project was a challenging but rewarding experience, and I am proud to have contributed to a major advancement in precision agriculture.</h6>
+        </div>
+      </div>
+      <div class="row pt-4">
+        <div class="col-lg-4">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/work/mira_perception.gif" alt="">
           </div>
         </div>
-        -->
-      </div> <!-- End gridder -->
-      <div class="text-center wow fadeInUp">
-        <a href="javascript:void(0)" class="btn btn-theme">Load More</a>
+        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
+          <h5 class="fg-theme mb-3 fw-bold">Mirã's perception system</h5>
+          <h6 class="text-justify">I played a key role in the design and development of a three-dimensional perception system for
+            the Mirã robot. This system was based on LiDAR sensors and creates a costmap from geometrical features of the scene
+            to provide a safe and reliable autonomous navigation for the robot.</h6>
+        </div>
+      </div>
+      <div class="row pt-4">
+        <div class="col-lg-4">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/work/mira_odom.gif" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
+          <h5 class="fg-theme mb-3 fw-bold">Design of the Mirã robot</h5>
+          <h6 class="text-justify">I am proud to have been a part of the team responsible for the development of the Mirã robot.
+            This innovative robot was specifically designed at the University of São Paulo for soil analysis in soybean crops,
+            and I was directly involved in the design and building the robotic platform, as well as the programming of the low-level
+            algorithms and controllers that make this robot move. It was a challenging project, but the end result was a highly functional and efficient robot that
+            is already making a real difference in the field. Being a part of this team was a fantastic experience, and I am excited
+            to continue working on projects that have a positive impact on the world.</h6>
+        </div>
       </div>
     </div>
   </div> <!-- End Portfolio page -->
+
+  <!-- Contact page -->
+  <div class="vg-page page-portfolio pt-5" id="contact">
+    <div class="container">
+      <h1 class="text-center fw-bold wow fadeInUp">Contact me</h1>
+      <div class="row pt-4 pb-5">
+        <div class="col-sm-4 text-center">
+          <a href="https://www.linkedin.com/in/mateusvalverde" class="fa fa-linkedin fa-10x"></a>
+        </div>
+        <div class="col-sm-4 text-center">
+          <a href="https://twitter.com/GasparinoUIUC" class="fa fa-twitter"></a>
+        </div>
+        <div class="col-sm-4 text-center">
+          <a href="mvalve2@illinois.edu" class="fa fa-google"></a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End Contact page -->
   
   <!-- Footer -->
   <div class="vg-footer">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-4 py-3">
-          <div class="footer-info">
-            <p>Where to find me</p>
-            <hr class="divider">
-            <p class="fs-large fg-white">University of Illinois at Urbana-Champaign, Field Robotics Engineering and Science Hub (FRESH), Illinois US</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 py-3">
-          <div class="float-lg-right">
-            <p>Follow me</p>
-            <hr class="divider">
-            <ul class="list-unstyled">
-              <li><a href="https://twitter.com/GasparinoUIUC">Twitter</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 py-3">
-          <div class="float-lg-right">
-            <p>Contact me</p>
-            <hr class="divider">
-            <ul class="list-unstyled">
-              <li>mvalve2@illinois.edu</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center mt-3">
-        <div class="col-12">
-          <p class="text-center mb-0 mt-4">Copyright &copy;2020. All right reserved | This template is made with <span class="ti-heart fg-theme-red"></span> by <a href="https://www.macodeid.com/">MACode ID</a> and modified by me</p>
-        </div>
-      </div>
+      <p class="text-center mb-0 mt-1">Copyright &copy;2023. All right reserved | Modified from <a href="https://www.macodeid.com/">MACode ID</a></p>
     </div>
   </div> <!-- End footer -->
   
