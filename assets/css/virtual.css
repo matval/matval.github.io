@@ -521,11 +521,6 @@ a:hover, a:active {
 /* 
     7. List style
 */
-.just {
-    text-align: justify;
-    text-justify: inter-word;
-}
-
 .theme-list {
     position: relative;
     padding-left: 30px;
